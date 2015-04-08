@@ -8,7 +8,7 @@ png(file = "plot4.png", width = 480, height = 480)
 par(mfcol = c(2,2))
 
 #top left
-with(data2, plot(datetime,Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)", xlab = ""))
+with(data2, plot(datetime,Global_active_power, type = "l", ylab = "Global Active Power", xlab = ""))
 #bottom left
 with(data2, plot(datetime,Sub_metering_1, type = "n", ylab = "Energy sub metering", xlab = ""))
 with(data2, lines(datetime,Sub_metering_1, type = "l", col = "black"))
